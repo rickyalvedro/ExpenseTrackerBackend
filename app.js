@@ -4,8 +4,12 @@ const fs = require("fs");
 const express = require("express");
 const bodyParser = require("body-parser");
 var cors = require("cors");
+
+// Removed helmet and morgan
+
 // const helmet = require("helmet");
 // const morgan = require("morgan");
+
 const app = express();
 const dotenv = require("dotenv");
 
@@ -23,6 +27,8 @@ const expenseRoutes = require("./routes/expense");
 const purchaseRoutes = require("./routes/purchase");
 const premiumFeatureRoutes = require("./routes/premiumFeature");
 const resetPasswordRoutes = require("./routes/resetpassword");
+
+// Removed access.log files
 
 // const accessLogStream = fs.createWriteStream(
 //   path.join(__dirname, "access.log"),
