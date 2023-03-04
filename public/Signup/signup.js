@@ -13,7 +13,7 @@ async function signup(e) {
       signupDetails
     );
     if (response.status === 201) {
-      window.location.href = "../login/login.html";
+      window.location.href = "../Login/login.html";
     } else {
       throw new Error("Failed to login");
     }
