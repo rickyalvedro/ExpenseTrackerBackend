@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6041cbce82.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <form onsubmit="login(event)">
+        <div class="box">
+          <i class="fa fa-envelope"></i>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="box">
+          <i class="fa fa-key"></i>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <button class="btn">Login</button>
+        <button class="link">
+          <a href="../Signup/signup.html">New User - Signup Now</a>
+        </button>
+        <button class="btn" onclick="forgotpassword()">Forgot Password</button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js"></script>
+    <script src="./login.js"></script>
+  </body>
+</html>

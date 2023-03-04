@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6041cbce82.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+      <h3>Signup Page</h3>
+
+      <form onsubmit="signup(event)">
+        <div class="box">
+          <i class="fa fa-user"></i>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="box">
+          <i class="fa fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div class="box">
+          <i class="fa fa-key"></i>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <button class="btn">Signup</button>
+        <br />
+        <button class="link">
+          <a href="../Login/login.html">Existing User - Login</a>
+        </button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js"></script>
+    <script src="./signup.js"></script>
+  </body>
+</html>
